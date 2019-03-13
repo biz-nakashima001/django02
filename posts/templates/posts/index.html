@@ -32,7 +32,7 @@
   <h1>ようこそ中嶋のブログへ</h1>
   <br/><br/>
   {% load static %}
-  <img src="{% static 'posts/home.jpg' %}" class="img-fluid rounded" style="max-height:200px;">
+  <img src="{% static 'posts/home.jpg' %}" class="img-fluid rounded mx-auto d-block" style="max-height:300px;">
   <h3>最新の投稿</h3>
   {% for post in posts.all %}
   <a href="{% url 'post_detail' post.id %}">{{post.title}}</a>
